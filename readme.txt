@@ -1,0 +1,50 @@
+=== Bootstrap 5 Sass Template for Visual Studio Code ===
+
+Version: Bootstrap v5.0.0-beta3
+Contributors: craftwerk
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+== Description ==
+
+Create and compile your own bootstrap.min.css with this template. Compiled CSS can be used in bootScore theme. Copyright 2021 Bastian Kreiter.
+
+== Documentation ==
+
+https://bootscore.me/documentation/custom-bootstrap-min-css/
+
+== General Usage ==
+
+1. Download file and unzip
+2. Download and install Visual Studio Code https://code.visualstudio.com/download
+3. Install Live Sass Compiler Extension https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass
+4. Open Visual Studio Code and open file folder
+5. Open index.html in browser
+6. Edit variables in folder /dist/css/bootstrap.scss. Available variables can be found in folder /scss/_variables.scss
+7. Klick "Watch Sass" in the blue banner in VSCode window
+8. Enjoy your new Bootstrap
+
+== Usage in bootScore-child ==
+
+1. Copy your generated bootstrap.min.css, bootstrap.min.css.map (optional), bootstrap.scss (optional, in case you want to edit later, store a copy of it) in folder /css/lib/ in child theme.
+2. Insert following snippet in child-theme's functions.php:
+
+// Overide bootstrap.min.css in child-theme
+function bootscore_replace_bootstrap() {
+
+    // Dequeue parent-theme bootstrap.min.css
+    wp_dequeue_style( 'bootstrap' );
+    wp_deregister_style( 'bootstrap' );
+
+    // Enqueue new bootstrap.min.css in child-theme
+    wp_enqueue_style( 'child-theme-bootstrap', get_stylesheet_directory_uri() .'/css/lib/bootstrap.min.css' , array('parent-style'));
+}
+add_action( 'wp_enqueue_scripts', 'bootscore_replace_bootstrap', 20 );
+
+3. Enjoy your new bootScore
+
+
+
+== Changelog ==
+
+    * April 26 2021 - Bootstrap v5.0.0-beta3
