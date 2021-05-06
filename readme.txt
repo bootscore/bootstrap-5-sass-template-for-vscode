@@ -1,6 +1,6 @@
 === Bootstrap 5 Sass Template for Visual Studio Code ===
 
-Version: Bootstrap v5.0.0-beta3
+Version: Bootstrap 5.0.0
 Contributors: craftwerk
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -21,8 +21,9 @@ https://bootscore.me/documentation/custom-bootstrap-min-css/
 4. Open Visual Studio Code and open file folder
 5. Open index.html in browser
 6. Edit variables in folder /dist/css/bootstrap.scss. Available variables can be found in folder /scss/_variables.scss
-7. Klick "Watch Sass" in the blue banner in VSCode window
-8. Enjoy your new Bootstrap
+7. Save file
+8. Klick "Watch Sass" in the blue banner in VSCode window
+9. Enjoy your new Bootstrap
 
 == Usage in bootScore-child ==
 
@@ -46,5 +47,7 @@ add_action( 'wp_enqueue_scripts', 'bootscore_replace_bootstrap', 20 );
 
 
 == Changelog ==
+
+    * May 06 2021 - Bootstrap 5.0.0
 
     * April 26 2021 - Bootstrap v5.0.0-beta3
