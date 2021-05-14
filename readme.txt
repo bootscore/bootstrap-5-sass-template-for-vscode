@@ -1,6 +1,6 @@
 === Bootstrap 5 Sass Template for Visual Studio Code ===
 
-Version: Bootstrap 5.0.0
+Version: Bootstrap 5.0.1
 Contributors: craftwerk
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -47,6 +47,8 @@ add_action( 'wp_enqueue_scripts', 'bootscore_replace_bootstrap', 20 );
 
 
 == Changelog ==
+
+    * May 14 2021 - Bootstrap 5.0.1
 
     * May 06 2021 - Bootstrap 5.0.0
 
