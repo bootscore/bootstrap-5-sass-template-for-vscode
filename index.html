@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
-    <title>Bootstrap 5.0.2 Components</title>
+    <title>Bootstrap 5.1.0 Components</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -37,7 +37,7 @@
     <main class="container py-5">
 
         <div class="row">
-            <h1 class="d-md-none">Cheatsheet Bootstrap 5.0.2</h1>
+            <h1 class="d-md-none">Cheatsheet Bootstrap 5.1.0</h1>
             <p class="lead d-md-none">Kitchen sink of Bootstrap components.</p>
             <div class="col-md-3 order-md-last">
                 <div class="accordion sticky-top mb-4" id="table-of-contents" style="top: 3rem;">
@@ -99,10 +99,10 @@
                                     <li><a class="text-dark" href="#modal">Modal</a></li>
                                     <li><a class="text-dark" href="#navs">Navs</a></li>
                                     <li><a class="text-dark" href="#navbar">Navbar</a></li>
+                                    <li><a class="text-dark" href="#offcanvas">Offcanvas</a></li>
                                     <li><a class="text-dark" href="#pagination">Pagination</a></li>
                                     <li><a class="text-dark" href="#popovers">Popovers</a></li>
                                     <li><a class="text-dark" href="#progress">Progress</a></li>
-                                    <li><a class="text-dark" href="#offcanvas">Offcanvas</a></li>
                                     <li><a class="text-dark" href="#spinners">Spinners</a></li>
                                     <li><a class="text-dark" href="#toasts">Toasts</a></li>
                                     <li><a class="text-dark" href="#tooltips">Tooltips</a></li>
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="col">
-                <p class="h1 d-none d-md-block">Cheatsheet Bootstrap 5.0.2</p>
+                <p class="h1 d-none d-md-block">Cheatsheet Bootstrap 5.1.0</p>
                 <p class="lead d-none d-md-block mb-5">Kitchen sink of Bootstrap components.</p>
                 <section id="contents" class="pb-5">
                     <h2 class="border-bottom pb-4">Contents</h2>
@@ -1449,7 +1449,7 @@
                                     </div>
                                 </div>
                             </nav>
-                            <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
+                            <nav class="navbar navbar-expand-xl navbar-dark bg-primary mb-4">
                                 <div class="container-fluid">
                                     <a class="navbar-brand" href="#">
                                         <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy">
@@ -1489,6 +1489,97 @@
                                     </div>
                                 </div>
                             </nav>
+                            <nav class="navbar navbar-expand-xxl navbar-light bg-light">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Link</a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Dropdown
+                                                    </a>
+                                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                        <li>
+                                                            <hr class="dropdown-divider">
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <form class="d-flex">
+                                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                <button class="btn btn-outline-success" style="width: 102px;" type="submit">Search</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </article>
+                    <article class="py-4" id="offcanvas">
+                        <h3>Offcanvas</h3>
+                        <p class="lead"><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/offcanvas/" rel="noopener">Documentation</a></p>
+                        <div class="bd-example">
+                            <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top
+                                offcanvas</button>
+                            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right
+                                offcanvas</button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom
+                                offcanvas</button>
+                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body small">
+                                    ...
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Toggle left
+                                offcanvas</button>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasLeftLabel">Offcanvas left</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body small">
+                                    ...
+                                </div>
+                            </div>
                         </div>
                     </article>
                     <article class="py-4" id="pagination">
@@ -1589,56 +1680,6 @@
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="py-4" id="offcanvas">
-                        <h3>Offcanvas</h3>
-                        <p class="lead"><a target="_blank" href="https://getbootstrap.com/docs/5.0/components/offcanvas/" rel="noopener">Documentation</a></p>
-                        <div class="bd-example">
-                            <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top
-                                offcanvas</button>
-                            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-                                <div class="offcanvas-header">
-                                    <h5 id="offcanvasTopLabel">Offcanvas top</h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    ...
-                                </div>
-                            </div>
-                            <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right
-                                offcanvas</button>
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    ...
-                                </div>
-                            </div>
-                            <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom
-                                offcanvas</button>
-                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body small">
-                                    ...
-                                </div>
-                            </div>
-                            <button class="btn btn-primary mb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Toggle left
-                                offcanvas</button>
-                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasLeftLabel">Offcanvas left</h5>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body small">
-                                    ...
-                                </div>
                             </div>
                         </div>
                     </article>

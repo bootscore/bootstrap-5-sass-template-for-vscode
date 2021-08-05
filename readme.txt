@@ -1,9 +1,9 @@
 === Bootstrap 5 Sass Template for Visual Studio Code ===
 
-Version: Bootstrap 5.0.2
+Version: Bootstrap 5.1.0
 Contributors: craftwerk
-License: GNU General Public License v2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: MIT License
+License URI: https://github.com/craftwerkberlin/bootstrap-5-sass-template-for-vscode/blob/main/LICENSE
 
 == Description ==
 
@@ -47,6 +47,11 @@ add_action( 'wp_enqueue_scripts', 'bootscore_replace_bootstrap', 20 );
 
 
 == Changelog ==
+
+    = August 05 2021 = 
+    
+        * Bootstrap 5.1.0
+        * added navbar offcanvas example
 
     = June 23 2021 = 
     
