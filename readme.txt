@@ -45,7 +45,6 @@ add_action( 'wp_enqueue_scripts', 'bootscore_replace_bootstrap', 20 );
 3. Enjoy your new bootScore
 
 
-
 == Changelog ==
 
     = August 05 2021 = 
