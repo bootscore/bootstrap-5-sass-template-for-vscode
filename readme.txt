@@ -3,7 +3,7 @@
 Version: Bootstrap 5.1.0
 Contributors: craftwerk
 License: MIT License
-License URI: https://github.com/craftwerkberlin/bootstrap-5-sass-template-for-vscode/blob/main/LICENSE
+License URI: https://github.com/crftwrk/bootstrap-5-sass-template-for-vscode/blob/main/LICENSE
 
 == Description ==
 
