@@ -8,7 +8,7 @@ Documentation: https://bootscore.me/documentation/custom-bootstrap-min-css/
 
 1. Download file and unzip
 2. Download and install Visual Studio Code Editor https://code.visualstudio.com/download
-3. Open Visual Studio Code and open file folder and install Live Sass Compiler Extension https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass
+3. Open Visual Studio Code Editor and install Live Sass Compiler Extension https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass
 4. Open file folder Visual Studio Code Editor
 5. Open index.html in browser
 6. Edit variables in folder /dist/css/bootstrap.scss. Available variables can be found in folder /scss/_variables.scss
