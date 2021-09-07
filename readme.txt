@@ -1,6 +1,6 @@
 === Bootstrap 5 Sass Template for Visual Studio Code ===
 
-Version: Bootstrap 5.1.0
+Version: Bootstrap 5.1.1
 Contributors: craftwerk
 License: MIT License
 License URI: https://github.com/crftwrk/bootstrap-5-sass-template-for-vscode/blob/main/LICENSE
@@ -46,6 +46,10 @@ add_action( 'wp_enqueue_scripts', 'bootscore_replace_bootstrap', 20 );
 
 
 == Changelog ==
+
+    = September 07 2021 = 
+    
+        * Bootstrap 5.1.1
 
     = August 05 2021 = 
     
