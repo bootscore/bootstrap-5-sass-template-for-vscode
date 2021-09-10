@@ -1,9 +1,9 @@
 === Bootstrap 5 Sass Template for Visual Studio Code ===
 
 Version: Bootstrap 5.1.1
-Contributors: craftwerk
+Contributors: The bootScore Contributors
 License: MIT License
-License URI: https://github.com/crftwrk/bootstrap-5-sass-template-for-vscode/blob/main/LICENSE
+License URI: https://github.com/bootscore/bootstrap-5-sass-template-for-vscode/blob/main/LICENSE
 
 == Description ==
 
